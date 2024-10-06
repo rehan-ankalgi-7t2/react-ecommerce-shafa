@@ -1,6 +1,7 @@
 
 import './App.css';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import CartPage from './pages/CartPage';
@@ -17,6 +18,7 @@ function App() {
      <Provider store = {store}>
      <BrowserRouter>
       <Header/>
+    <Sidebar/>
       <Routes>
      
         <Route path="/" element={<Home/>}/>
